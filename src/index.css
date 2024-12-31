@@ -1,0 +1,108 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+/* Global styles for light and dark themes */
+
+/* Light theme */
+body {
+  color: #000;
+   --background-color: #ffffff87;
+   --button-border-color: #8f67fa;
+   --button-hover-color:#8f67fa;
+   --yataira:#8f67fa;
+   --dot:#8f67fa;
+   --font:#8f67fa;
+   --form-font:#ff5100;
+   --form-box-color:#f2ff5ea6;
+   --dot:rgb(255, 255, 0);
+   --footer:#8f67fa;
+    --item-name:#6932ff;
+     --button-background-img:url("./assets/db.jpeg");
+} 
+
+/* Dark theme */
+body.dark-theme {
+  --background-color: #0000007c;
+  --button-hover-color: #ff5100;
+  --button-border-color: #ff5100;
+  --yataira:#ff5100;
+  --dot:#ff5100;
+  --font:white;
+  --form-font:#24ff00;
+  --form-box-color:#ff7e42ba;
+  --dot:#ff5100;
+  --footer:#ff5100;
+  --item-name:white;
+  --button-background-img:url("./assets/lb.jpeg");
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+    background-image: url("./assets/hal2.jpeg"); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+body.dark-theme{
+  background-image: url("./assets/hal2.gif"); /* Path to your background image */
+}
+
+/* Color overlay using a pseudo-element */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the color and transparency */
+  z-index: 1;
+}
+
+/* Ensure content is on top of the overlay */
+#root, .app-container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.app {
+  width: 80%;
+  margin: auto;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.root{
+  --dark:#24ff00;
+  --light:#000;
+  --primary:#ff00ff;
+  --secondary:#00ff00;
+}
