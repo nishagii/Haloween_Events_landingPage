@@ -1,0 +1,39 @@
+.halla {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 30px;
+  margin-top: 60px;
+}
+
+.aboutus {
+  color: #ffffff;
+  background-color: #00000070;
+  padding: 20px;
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0 4px 8px 0 rgba(255, 249, 138, 0.554), 0 0 rgba(255, 255, 86, 0.713);
+  transition: all 0.35s ease;
+}
+
+.aboutus:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.aboutus h2 {
+  margin-top: 0;
+}
+
+.aboutus p {
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+.halla h1 {
+  grid-column: 1 / -1; /* Make the title span across all columns */
+  text-align: center;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
