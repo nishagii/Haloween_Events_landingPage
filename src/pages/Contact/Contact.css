@@ -1,0 +1,88 @@
+.forms {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.401);
+  margin-top: 70px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0px rgba(255, 153, 0, 0.414), 0 0 rgba(255, 255, 86, 0.713);
+  transition: all 0.35s ease;
+}
+
+.forms h1{
+  color: white;
+}
+
+.forms:hover {
+   box-shadow: none; 
+  transform: translateY(5px); 
+}
+
+
+.form-labels {
+  flex: 1;
+  max-width: 400px;
+  margin-top: 20px;
+  color: var(--form-font);
+}
+
+.form-labels label {
+  font-weight: bold;
+
+}
+
+.box {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid var(--form-box-color);
+  border-radius: 10px;
+}
+
+.details {
+  margin-top: 100px;
+  flex: 1;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+}
+
+.details a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.details a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .forms {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form-labels,
+  .details {
+    max-width: 100%;
+  }
+}
+.error {
+  color:#24ff00;
+  font-size: 0.875rem; /* Adjust font size as needed */
+  margin-top: 4px;
+}
+button[type="submit"] {
+  background-color: var(--button-hover-color);
+  color: rgb(255, 255, 255);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius:50px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
