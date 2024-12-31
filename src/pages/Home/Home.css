@@ -1,0 +1,49 @@
+/* Container for the welcome message */
+.welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh; 
+  text-align: center;
+  margin-top:30px;
+  padding: 30px;
+  padding-top: 50px;
+  color: white;
+}
+
+/* Style for the welcome message heading */
+.welcome-message h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Style for the input field */
+.name-input {
+  width: 80%;
+  color:#ffffff;
+  max-width: 400px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid var(--button-border-color);;
+  border-radius: 50px;
+  outline: none;
+  background-color: transparent;
+  box-shadow: 0 0 5px rgba(246, 255, 0, 0.5);
+}
+.name-input::placeholder {
+  color: #e4e4e4d5;
+}
+
+.name-input:focus {
+  border-color: #ffff00;
+  box-shadow: 0 0 5px rgba(246, 255, 0, 0.5);
+}
+
+.clock {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
